@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create Board</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row wrapper mt-3">
+        <div class="col-12 col-sm-6 col-lg-3 col-md-4">
+            <button type="button" class="btn btn-success btn-block" onclick="showCard()">Add board</button>
+
+            <div class="card mt-3 d-none" id="card">
+                <div class="card-body">
+                    <textarea id="board-title" class="form-control" placeholder="Type here"></textarea>
+
+                    <button class="btn btn-success mt-3 d-block ml-auto" type="button" onclick="addBoard()">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-9 col-md-8">
+            <div class="row" id="result"></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
